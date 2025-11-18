@@ -7,8 +7,18 @@ from google.oauth2 import service_account
 
 
 def load_config():
-    with open("config_example.yaml", "r", encoding="utf-8") as f:
+    """
+    Lädt zuerst config.yaml (lokal, im .gitignore),
+    fällt dann zurück auf config_example.yaml.
+    """
+    if os.path.exists("config.yaml"):
+        config_path = "config.yaml"
+    else:
+        config_path = "config_example.yaml"
+
+    with open(config_path, "r", encoding="utf-8") as f:
         return yaml.safe_load(f)
+
 
 
 def get_client(key_file):
