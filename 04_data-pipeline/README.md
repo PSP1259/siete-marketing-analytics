@@ -36,13 +36,13 @@ Each file includes the following dimensions and metrics:
 | event_name | The exact GA4 event type |
 | event_count | Number of occurrences |
 
-Expected output files:
+Output files:
 
 04_data-pipeline/data/
-├─ view_item.csv
-├─ add_to_cart.csv
-├─ begin_checkout.csv
-└─ purchase.csv
+view_item.csv
+add_to_cart.csv
+begin_checkout.csv
+purchase.csv
 
 ## How It Works (Process Flow)
 
