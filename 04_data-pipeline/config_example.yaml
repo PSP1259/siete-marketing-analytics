@@ -1,15 +1,15 @@
 ga4:
-  property_id: "xxx"
-  key_file: "Dateipfad"
+  property_id: xxxxxxxxx
+  key_file: "path/to/your/service-account.json"
 
 export:
-  start_date: "2025-01-01"
-  end_date: "2025-12-31"
+  start_date: '2025-11-01'
+  end_date: '2025-11-30'
 
   events:
-    - "view_item"
-    - "add_to_cart"
-    - "begin_checkout"
-    - "purchase"
+    - view_item
+    - add_to_cart
+    - begin_checkout
+    - purchase
 
-  output_folder: "data"
+  output_folder: 'data'
