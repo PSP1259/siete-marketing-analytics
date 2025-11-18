@@ -1,23 +1,27 @@
 # 01 – Site & Context
 
-Dieses Projekt basiert auf meinem eigenen Testshop **Siete Padel** unter der Domain `siete.ch`.
+This project uses my own public test shop **Siete Padel** at `siete.ch`.
 
-Der Shop ist bewusst **kein kommerzielles Projekt**, sondern ein öffentlich erreichbarer Technik-Spielplatz:
+This store is intentionally **not a commercial product**, but a fully accessible technical playground:
 
-- WordPress mit Astra-Theme  
-- WooCommerce als Shop-Engine  
-- einfache, eigenständig gebaute Seitenstruktur (Startseite, Kategorien, Produkte, Checkout)  
-- Design: solide, aber klar nicht „perfekt“ – der Fokus liegt auf Technik und Messbarkeit, nicht auf Brand-Auftritt  
+- WordPress with Astra theme  
+- WooCommerce as the e-commerce engine  
+- Custom, simple page structure (Homepage, Categories, Products, Checkout)  
+- Design is functional rather than polished  
+- Strong focus on measurability and technical transparency
 
-Ich nutze den Shop, um folgende Themen in der Praxis zu verstehen:
+<img width="512" height="227" alt="image" src="https://github.com/user-attachments/assets/10b67348-0812-41f1-9679-6d557fe55fe5" />
 
-- sauberes Client-side Tracking mit Google Tag Manager und GA4  
-- E-Commerce Events und Data Layer (WooCommerce + GTM4WP)  
-- End-to-end Marketing Analytics Pipeline mit der GA4 Data API und Python  
 
-Wichtig:
+I use this shop as a **real-world sandbox** to gain hands-on experience in:
 
-- Ich habe **kein Ziel, aktiv Traffic oder echte Verkäufe zu generieren**.  
-- Der Shop ist eine **Lernumgebung**, keine Verkaufsmaschine.  
-- Datenschutz ist mir wichtig – keine personenbezogenen Daten werden für Analyse oder in diesem Repository verwendet.
+- Clean client-side tracking using Google Tag Manager and GA4  
+- Event-based e-commerce tracking (WooCommerce + GTM4WP)  
+- Building an end-to-end analytics pipeline  
+- Exporting and processing event data via GA4 Data API and Python  
 
+Scope clarification:
+
+- **No active marketing or sales goals**
+- **No personal data** stored or published in this repository  
+- This is a **learning environment** focused on measurement and data engineering
