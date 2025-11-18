@@ -1,0 +1,11 @@
+# Python Umgebung
+.venv/
+__pycache__/
+*.pyc
+
+# Lokale Configs / Secrets
+config.yaml
+*.json
+
+# Daten-Exports
+data/
