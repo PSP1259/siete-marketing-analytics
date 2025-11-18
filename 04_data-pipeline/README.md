@@ -7,8 +7,8 @@ All exported data is written to local CSV files and ignored by Git version contr
 
 ## Folder Contents
 
-| File / Folder | Description | Version Control |
-|---------------|-------------|----------------|
+| File / Folder | Description | 
+|---------------|-------------|
 | `extract_ga4_events.py` | Main ETL script. Authenticates via service account, queries GA4, exports event data.
 | `config_example.yaml` | Template configuration with placeholder values for onboarding.
 | `config.yaml` | Local configuration containing real GA4 property ID + credential path.
