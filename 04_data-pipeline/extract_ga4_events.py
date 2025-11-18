@@ -5,16 +5,13 @@ from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import DateRange, Metric, Dimension, RunReportRequest
 from google.oauth2 import service_account
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def load_config():
-    """
-    Lädt zuerst config.yaml (lokal, im .gitignore),
-    fällt dann zurück auf config_example.yaml.
-    """
-    if os.path.exists("config.yaml"):
-        config_path = "config.yaml"
+    if os.path.exists(os.path.join(BASE_DIR, "config.yaml")):
+        config_path = os.path.join(BASE_DIR, "config.yaml")
     else:
-        config_path = "config_example.yaml"
+        config_path = os.path.join(BASE_DIR, "config_example.yaml")
 
     with open(config_path, "r", encoding="utf-8") as f:
         return yaml.safe_load(f)
@@ -59,7 +56,8 @@ def main():
     property_id = cfg["ga4"]["property_id"]
     start_date = cfg["export"]["start_date"]
     end_date = cfg["export"]["end_date"]
-    output_folder = cfg["export"]["output_folder"]
+    output_folder = os.path.join(BASE_DIR, cfg["export"]["output_folder"])
+
 
     for event in cfg["export"]["events"]:
         print(f"Fetching: {event}")

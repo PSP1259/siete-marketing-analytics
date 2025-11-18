@@ -1,11 +1,19 @@
-# Python Umgebung
+# Python venv
 .venv/
-__pycache__/
-*.pyc
+service-account NO SYNC/
+04_data-pipeline/data/
+04_data-pipeline/config.yaml
+*.csv
 
-# Lokale Configs / Secrets
-config.yaml
+
+# VS Code
+.vscode/
+
+# Service Account Keys (niemals committen)
+service-account NO SYNC/
 *.json
 
-# Daten-Exports
-data/
+# Data-Exporte
+04_data-pipeline/data/
+*.csv
+
