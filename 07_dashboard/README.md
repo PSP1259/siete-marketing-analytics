@@ -48,4 +48,4 @@ The following CSV files must exist: 04_data-pipeline/data/ `view_item.csv` `add_
 
 ```bash
 .venv\Scripts\activate
-python 04_data-pipeline/extract_ga4_events.py
+streamlit run 07_dashboard/app.py
