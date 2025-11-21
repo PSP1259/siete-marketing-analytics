@@ -53,21 +53,21 @@
 
 ---
 
-## 7. OSI Layer Mapping (always a pleasure)
+## 5. OSI Layer Mapping (always a pleasure)
 
-| OSI Layer | Definition | Projektkomponenten |
-|----------|------------|--------------------|
-| Layer 7 – Application | Benutzernahe Software, APIs, Datenverarbeitung | WordPress, WooCommerce, GA4, GA4 Data API, Google Tag Manager, Python Scripts (extract_ga4_events.py, merge_funnel_daily.py, funnel_analysis.py), Streamlit Dashboard |
-| Layer 6 – Presentation | Datenformatierung und Darstellung | HTML/CSS/JS (Astra Theme), DataLayer JSON, GA4 API JSON Responses, Streamlit UI Rendering |
-| Layer 5 – Session | Sitzungssteuerung und Identitätskontext | GA4 Session Logic, Client ID Cookies, Session ID Cookies, Google Cloud Service Account Authentication |
-| Layer 4 – Transport | Zuverlässige Ende-zu-Ende Datenübertragung | HTTPS, TLS, TCP, Streamlit Local Server (Port 8501) |
-| Layer 3 – Network | Routing, IP-Adressen, DNS | DNS bei Hostpoint (siete.ch), Internet Routing, Google Cloud Endpoints |
-| Layer 2 – Data Link | Lokale Übertragung innerhalb eines Netzwerks | WLAN/LAN Verbindung des lokalen Systems, Ethernet Frames bei Hostpoint Servern |
-| Layer 1 – Physical | Physikalische Signalübertragung | Glasfaser/DSL, lokale PC-Hardware, Hostpoint Serverhardware |
+| OSI Layer | Definition | Project Components |
+|----------|------------|---------------------|
+| Layer 7 – Application | User-facing software, APIs, data processing | WordPress, WooCommerce, GA4, GA4 Data API, Google Tag Manager, Python scripts (extract_ga4_events.py, merge_funnel_daily.py, funnel_analysis.py), Streamlit Dashboard |
+| Layer 6 – Presentation | Data formatting, UI rendering, serialization | HTML/CSS/JS (Astra Theme), DataLayer JSON, GA4 API JSON responses, Streamlit UI rendering |
+| Layer 5 – Session | Session control, identity context, state handling | GA4 session logic, Client ID cookies, Session ID cookies, Google Cloud Service Account authentication |
+| Layer 4 – Transport | End-to-end reliable data transfer | HTTPS, TLS, TCP, Streamlit local server (port 8501) |
+| Layer 3 – Network | Routing, addressing, DNS resolution | Hostpoint DNS (siete.ch), Internet routing, Google Cloud API endpoints |
+| Layer 2 – Data Link | Local network frame-level transmission | Local WLAN/LAN, Ethernet frames on Hostpoint servers |
+| Layer 1 – Physical | Physical signal transmission | Fiber/DSL infrastructure, local PC hardware, Hostpoint server hardware |
 
 ---
 
-## 8. Execution
+## 6. Execution
 
 Project directory: `cd siete-marketing-analytics`
 
